@@ -1,0 +1,49 @@
+@startuml
+
+class Persona{
+String nombre;
+String apellido;
+int fecha_de_nacimiento;
+String lugar_de_nacimiento;
+int edad;
+double estatura;
+String sexo;
+String nivel_de_estudio;
+String situacion_militar;
+int DNI;
+}
+
+class Lugar{
+String nombre;
+String codigo;
+}
+class Residencia{
+Persona persona;
+Lugar municipio;
+String direccion;
+Date fecha_de_inicio;
+}
+
+class Censo{
+Persona persona;
+Lugar municipio;
+String direccion;
+Date fecha_de_registro;
+}
+
+class Municipio{
+String nombre;
+int codigo;
+int población_de_derecho;
+int población_de_hecho;
+}
+
+class provincia{
+String nombre;
+int codigo;
+int población_de_derecho;
+int población_de_hecho;
+}
+
+
+@enduml
