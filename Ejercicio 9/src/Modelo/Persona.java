@@ -4,21 +4,32 @@
  */
 package Modelo;
 
-/**
- *
- * @author jerem
- */
+import java.util.Date;
+
 public class Persona {
     private String nombre;
     private String apellidos;
-      private String fechaDeNacimiento;
-    private String lugarDeNacimiento;
+    private Date fechaNacimiento;
+    private String lugarNacimiento;
     private int edad;
     private double estatura;
-    private char sexo;
-    private String nivelDeEstudios;
-    private String situacionMilitar;
-    private String dni;
+    private String sexo;
+    private String nivelEstudios;
+    private String situacionMilitar;  // Solo para hombres
+    private String dni;               // Solo para mayores de 16
+
+    public Persona(String nombre, String apellidos, Date fechaNacimiento, String lugarNacimiento, int edad, double estatura, String sexo, String nivelEstudios, String situacionMilitar, String dni) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.fechaNacimiento = fechaNacimiento;
+        this.lugarNacimiento = lugarNacimiento;
+        this.edad = edad;
+        this.estatura = estatura;
+        this.sexo = sexo;
+        this.nivelEstudios = nivelEstudios;
+        this.situacionMilitar = situacionMilitar;
+        this.dni = dni;
+    }
 
     public String getNombre() {
         return nombre;
@@ -28,12 +39,12 @@ public class Persona {
         return apellidos;
     }
 
-    public String getFechaDeNacimiento() {
-        return fechaDeNacimiento;
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
     }
 
-    public String getLugarDeNacimiento() {
-        return lugarDeNacimiento;
+    public String getLugarNacimiento() {
+        return lugarNacimiento;
     }
 
     public int getEdad() {
@@ -44,12 +55,12 @@ public class Persona {
         return estatura;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public String getNivelDeEstudios() {
-        return nivelDeEstudios;
+    public String getNivelEstudios() {
+        return nivelEstudios;
     }
 
     public String getSituacionMilitar() {
@@ -59,19 +70,4 @@ public class Persona {
     public String getDni() {
         return dni;
     }
-  
-    public Persona(String nombre, String apellidos, String fechaDeNacimiento, String lugarDeNacimiento, int edad, double estatura, char sexo, String nivelDeEstudios, String situacionMilitar, String dni){
-this.nombre = nombre;
-this.apellidos = apellidos;
-this.fechaDeNacimiento = fechaDeNacimiento;
-this.lugarDeNacimiento = lugarDeNacimiento;
-this.edad = edad;
-this.estatura = estatura;
-this.sexo = sexo;
-this.nivelDeEstudios = nivelDeEstudios;
-this.situacionMilitar = situacionMilitar;
-this.dni = dni;
 }
-
-}
-

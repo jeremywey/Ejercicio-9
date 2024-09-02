@@ -4,27 +4,20 @@
  */
 package Modelo;
 
-/**
- *
- * @author jerem
- */
 public class Lugar {
     private String nombre;
+    private String codigo;
+
+    public Lugar(String nombre, String codigo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+    }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-    private int codigo;
 }

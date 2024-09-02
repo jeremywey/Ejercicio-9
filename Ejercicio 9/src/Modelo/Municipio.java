@@ -4,45 +4,40 @@
  */
 package Modelo;
 
-/**
- *
- * @author jerem
- */
 public class Municipio {
     private String nombre;
+    private String codigo;
+    private int poblacionDerecho;
+    private int poblacionHecho;
+
+    public Municipio(String nombre, String codigo, int poblacionDerecho, int poblacionHecho) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.poblacionDerecho = poblacionDerecho;
+        this.poblacionHecho = poblacionHecho;
+    }
 
     public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public int getPoblacionDerecho() {
+        return poblacionDerecho;
     }
 
-    public int getPoblacionDeDerecho() {
-        return poblacionDeDerecho;
+    public void aumentarPoblacionDerecho() {
+        this.poblacionDerecho++;
     }
 
-    public void setPoblacionDeDerecho(int poblacionDeDerecho) {
-        this.poblacionDeDerecho = poblacionDeDerecho;
+    public int getPoblacionHecho() {
+        return poblacionHecho;
     }
 
-    public int getPoblacionDeHecho() {
-        return poblacionDeHecho;
+    public void aumentarPoblacionHecho() {
+        this.poblacionHecho++;
     }
-
-    public void setPoblacionDeHecho(int poblacionDeHecho) {
-        this.poblacionDeHecho = poblacionDeHecho;
-    }
-    private int codigo;
-    private int poblacionDeDerecho;
-    private int poblacionDeHecho;
 }

@@ -43,7 +43,8 @@ String nombre;
 int codigo;
 int población_de_derecho;
 int población_de_hecho;
-}
 
+}
+provincia "1" -- "*" Municipio 
 
 @enduml
